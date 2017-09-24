@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: com.netreally.bots.quiz.Hello::handle
       Runtime: java8
-      CodeUri: ./
+      CodeUri: s3://codepipeline-us-east-1-987802409920/aws-lexbot-facebook-/MyApp/
       Events:
         MyTimeApi:
           Type: Api
