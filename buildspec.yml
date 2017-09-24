@@ -9,6 +9,10 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+  install:
+      commands:
+        - aws cloudformation package --template-file SamTemplate.yaml --s3-bucket codebase.netreally.com
+                                     --output-template-file NewSamTemplate.yaml
 artifacts:
   files:
     - target/aws-lex-lambda-fbapp-1.0-SNAPSHOT.jar
