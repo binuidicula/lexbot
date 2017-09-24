@@ -5,7 +5,7 @@ Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: index.handler
+      Handler: com.netreally.bots.quiz.Hello::handle
       Runtime: java8
       CodeUri: ./target/aws-lex-lambda-fbapp-1.0-SNAPSHOT.jar
       Events:
