@@ -11,7 +11,7 @@ phases:
       - mvn package
   install:
     commands:
-      - aws cloudformation package --template-file SamTemplate.yaml --s3-bucket codebase.netreally.com
+      - aws cloudformation package --template-file SamTemplate.yaml --s3-bucket codepipeline-us-east-1-987802409920
                                    --output-template-file NewSamTemplate.yaml
 artifacts:
   files:
