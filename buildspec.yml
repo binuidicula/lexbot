@@ -11,4 +11,5 @@ phases:
       - mvn package
 artifacts:
   files:
+    - SamTemplate.yaml
     - target/aws-lex-lambda-fbapp-1.0-SNAPSHOT.jar
