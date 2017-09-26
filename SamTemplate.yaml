@@ -16,7 +16,9 @@ Resources:
     Properties:
       Handler: com.netreally.bots.quiz.Hello::handle
       Runtime: java8
-      CodeUri: s3://${SourceBucket}/${SourceArtifact}
+      CodeUri:
+         Bucket: !Ref SourceBucket
+         Key: !Ref SourceArtifact
       Events:
         MyTimeApi:
           Type: Api
