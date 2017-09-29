@@ -16,5 +16,5 @@ phases:
 artifacts:
   type: zip
   files:
-    - SamTemplate.yaml
+    - NewSamTemplate.yaml
     - target/aws-lex-lambda-fbapp-1.0-SNAPSHOT.jar
