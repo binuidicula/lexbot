@@ -17,4 +17,4 @@ artifacts:
   type: zip
   files:
     - NewSamTemplate.yaml
-    - target/aws-lex-lambda-fbapp-1.0-SNAPSHOT.jar
+    - aws-lex-lambda-fbapp-1.0-SNAPSHOT.jar
