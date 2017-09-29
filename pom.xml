@@ -8,7 +8,7 @@
     <artifactId>aws-lex-lambda-fbapp</artifactId>
     <packaging>jar</packaging>
     <properties>
-        <buildDirectory>${project.basedir}/</buildDirectory>
+        <outputDirectory>${project.basedir}</outputDirectory>
     </properties>
     <version>1.0-SNAPSHOT</version>
     <build>
@@ -29,6 +29,7 @@
                 <version>2.3</version>
                 <configuration>
                     <createDependencyReducedPom>false</createDependencyReducedPom>
+                    <outputFile>${project.basedir}/${project.artifactId}-${project.version}.jar</outputFile>
                 </configuration>
                 <executions>
                     <execution>
