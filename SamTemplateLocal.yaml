@@ -19,3 +19,9 @@ Resources:
       CodeUri:
          Bucket: !Ref SourceBucket
          Key: !Ref SourceArtifact
+      Events:
+        MyTimeApi:
+          Type: Api
+          Properties:
+            Path: /TimeResource
+            Method: GET

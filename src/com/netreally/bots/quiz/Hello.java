@@ -1,4 +1,4 @@
-package com.netreally.bots.quiz;
+package com.amazon.bots.quiz;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
